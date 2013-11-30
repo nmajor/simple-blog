@@ -1,0 +1,13 @@
+!!! 5
+%html
+  %head
+    %title
+      Dev
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    %section.row-fluid.main
+      %header
+        =  image_tag "avatar_square.jpg", :class => "avatar"
+      = yield
